@@ -1,0 +1,7 @@
+/build
+/spec
+*.log
+*~
+.node-version
+.npmignore
+.tags

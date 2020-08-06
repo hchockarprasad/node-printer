@@ -1,0 +1,30 @@
+{
+  "name": "node-printer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/printer.js",
+  "typings": "printer.d.ts",
+  "types": "./printer.d.ts",
+  "scripts": {
+    "install": "prebuild-install || node-gyp rebuild",
+    "lint": "npm run cpplint",
+    "cpplint": "node-cpplint --filters legal-copyright,build-include,build-namespaces src/*.cc"
+  },
+  "files": [
+    "lib",
+    "src",
+    "binding.gyp",
+    "keytar.d.ts"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-addon-api": "^3.0.0",
+    "prebuild-install": "^5.3.5"
+  },
+  "devDependencies": {
+    "node-cpplint": "^0.4.0",
+    "node-gyp": "^7.0.0"
+  }
+}
